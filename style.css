@@ -94,3 +94,23 @@ select {
     --fw-400: 400;
     --fw-700: 700;
 }
+
+.sedan-section {
+    background-color: var(--clr-orange);
+}
+
+.suv-section {
+    background-color: var(--clr-dcyan);
+}
+
+.luxury-section {
+    background-color: var(--clr-vdcyan);
+}
+
+@media (min-width: 375px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}
