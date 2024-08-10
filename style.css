@@ -95,6 +95,20 @@ select {
     --fw-700: 700;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 2rem 1rem;
+}
+
+.section {
+    padding: 2rem;
+}
+
 .sedan-section {
     background-color: var(--clr-orange);
 }
@@ -107,10 +121,50 @@ select {
     background-color: var(--clr-vdcyan);
 }
 
+h1 {
+    color: var(--clr-white);
+    text-transform: uppercase;
+    font-weight: var(--fw-700);
+    font-size: 2rem;
+}
+
+p {
+    color: var(--clr-white);
+    font-family: "Big Shoulders Display";
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.learn-button {
+    border-radius: 2rem;
+    border: 0;
+    width: 110px;
+    height: 40px;
+    margin-top: 2rem;
+    color: var(--clr-orange);
+}
+
 @media (min-width: 375px) {
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
-    
+    .sedan-section {
+        border-radius: .5rem 0 0 .5rem;
+    }
+
+    .luxury-section {
+        border-radius: 0 .5rem .5rem 0;
+    }
 }
+
+@media (max-width: 375px) {
+    .sedan-section {
+        border-radius: .5rem .5rem 0 0;
+    }
+
+    .luxury-section {
+        border-radius: 0 0 .5rem .5rem;
+    }
+}
+    
