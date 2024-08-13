@@ -106,7 +106,7 @@ body {
 }
 
 .section {
-    padding: 2rem;
+    padding: .5rem;
 }
 
 .sedan-section {
@@ -146,8 +146,10 @@ p {
 
 @media (min-width: 375px) {
     .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     
     }
     .sedan-section {
         border-radius: .5rem 0 0 .5rem;
