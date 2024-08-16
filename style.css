@@ -170,12 +170,18 @@ p {
 }
 
 @media (min-width: 375px) {
+
+  main {
+    max-width: 100%;
+  }
+
     .container {
       display: flex;
       align-items: center;
       justify-content: center;
       max-width: 50%;
       margin: 0 auto;
+      padding: 1rem;
     }
     .sedan-section {
         border-radius: .5rem 0 0 .5rem;
