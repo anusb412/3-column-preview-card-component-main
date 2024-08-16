@@ -171,24 +171,22 @@ p {
 
 @media (min-width: 375px) {
 
-  main {
-    max-width: 100%;
-  }
-
     .container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      max-width: 50%;
-      margin: 0 auto;
-      padding: 1rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      
     }
     .sedan-section {
-        border-radius: .5rem 0 0 .5rem;
+        border-radius: .5rem .5rem 0 0;
+        grid-column: 1 / span 2;
+    }
+
+    .suv-section {
+      border-radius: 0 0 0 .5rem;
     }
 
     .luxury-section {
-        border-radius: 0 .5rem .5rem 0;
+        border-radius: 0 0 .5rem 0;
     }
 }
 
@@ -200,5 +198,17 @@ p {
     .luxury-section {
         border-radius: 0 0 .5rem .5rem;
     }
+}
+
+@media (min-width:540px) {
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1rem;
+  }    
+
 }
     
