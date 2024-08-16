@@ -106,7 +106,12 @@ body {
 }
 
 .section {
-    padding: .5rem;
+    max-width: 100%;
+    padding: 2.5rem 3rem;
+}
+
+.desc {
+  font-size: 1.2rem;
 }
 
 .sedan-section {
@@ -132,10 +137,12 @@ p {
     color: var(--clr-white);
     font-family: "Big Shoulders Display";
     font-weight: 400;
-    line-height: 1.5rem;
+    font-size: 1rem;
+    line-height: 2rem;
 }
 
-.learn-button {
+.sedan-learn-button {
+  font-family: "Big Shoulders Display";
     border-radius: 2rem;
     border: 0;
     width: 110px;
@@ -144,12 +151,31 @@ p {
     color: var(--clr-orange);
 }
 
+.suv-learn-button {
+  border-radius: 2rem;
+  border: 0;
+  width: 110px;
+  height: 40px;
+  margin-top: 2rem;
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury-learn-button {
+  border-radius: 2rem;
+  border: 0;
+  width: 110px;
+  height: 40px;
+  margin-top: 2rem;
+  color: hsl(179, 100%, 13%);
+}
+
 @media (min-width: 375px) {
     .container {
       display: flex;
       align-items: center;
       justify-content: center;
-     
+      max-width: 50%;
+      margin: 0 auto;
     }
     .sedan-section {
         border-radius: .5rem 0 0 .5rem;
